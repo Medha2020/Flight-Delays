@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ 
+<title>Predict Flight Delays</title>
+<style>
+body{
+background:#F3F7BA;
+}
+
+
+</style>
+</head>
+<body>
+<div style ="width:1050px;height:100px;border:solid thin;margin:0px auto;"> 
+	<div style ="width:150px;height:100px;border:solid thin;float:left;">
+	<img src="excelr.png" style = "width:150px;height:100px;float:left">
+	</div>
+
+	<div style ="width:900px;height:100px;border:solid thin;margin-left:150px;">
+	<br/>
+	<div style = "text-align:center;font-size:50px;font-family:arial black;text-shadow:5px 5px dodgerblue;">
+	Flight Delays Predictor
+	</div>
+	</div>
+</div>
+<br>	
+	<div style = "text-align:left;font-size:14px;font-family:arial black;">
+	<p>Parameters</p>
+	</p>
+ 	<div style ="width:900px;height:140px;border:solid thin;">
+	<div style = "text-align:left;font-size:14px;font-family:arial;">
+	<p> {{ textOutput }} </p>
+	</div>
+              </div>
+        
+	{% if prediction >  0 %}
+	<h2 style="color:red;">Flight will be delayed by min</h2>
+	{% elif prediction <= 0 %}
+	<h2 style="color:blue;">Flight is not delayed</h2>
+	{% endif %}
+
+<br><br><br><br><br> <br> <br><br> 
+<div style = "text-align:left;font-size:12px;font-family:arial black;">
+Project Details
+</div>
+<div style = "text-align:left;font-size:10px;font-family:arial;">
+<div style ="width:1050px;height:60px;border:solid thin;"> 
+Medicine Side Effects Prediction<br>
+Project by Team 2 ExcelR , Pune Batch : May 2020 <br>
+Team 2 : Medha / Pratap / Rasool / Sowmya / Joseph<br>
+Algorithm Used: Random Forest<br>
+Technique Used: Count Vectorizer and TFIDF
+</div>
+</div>
+ 
+
+
+</body>
+
+
+</html>
